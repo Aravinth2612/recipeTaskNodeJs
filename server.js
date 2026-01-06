@@ -11,6 +11,16 @@ const PORT = 8000;
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.status(200).json({
+    message: "Welcome to Recipes API",
+    endpoints: {
+      getAll: "/recipes",
+      getOne: "/recipes/:id"
+    }
+  });
+});
+
 app.get("/recipes", async (req, res) => {
   try {
     const connection = await MongoClient.connect(URL);
