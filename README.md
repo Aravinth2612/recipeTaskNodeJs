@@ -1,36 +1,7 @@
-##This is The API for creating a new recipe
+## 📮 API Documentation
 
-curl --location 'http://localhost:8000/recipes' \
---header 'Content-Type: application/json' \
---data '{
-  "title": "Chicken Biryani",
-  "ingredients": ["Rice", "Chicken", "Spices"],
-  "instructions": "Cook rice, marinate chicken, mix and cook.",
-  "prepTime": 45,
-  "servings": 4
-}'
+Postman documentation for this API is available here:
+https://documenter.getpostman.com/view/49298610/2sBXVcnZGP
 
-
-##This is the API for fetching all the recipes
-
-curl --location 'http://localhost:8000/recipes' \
---data ''
-
-##This is the API to get a recipe by Id
-
-curl --location 'http://localhost:8000/recipes/695b68efe52de82d8fac3c68'
-
-
-##This is the API to edit a recipe
-
-curl --location --request PUT 'http://localhost:8000/recipes/695b5181a3ad289d2a834aa8' \
---header 'Content-Type: application/json' \
---data '{
-  "prepTime": 45
-}
-'
-
-##This is the API to delete a recipe
-
-curl --location --request DELETE 'http://localhost:8000/recipes/695b5181a3ad289d2a834aa8' \
---data ''
+Run in postman
+https://aravinthramasamy93-7005033.postman.co/workspace/Aravinth-kumar's-Workspace~c27640de-916d-4fdb-80da-5dc47c1cc015/collection/49298610-4223f239-b48e-4776-af11-9686a220b59b?action=share&creator=49298610
