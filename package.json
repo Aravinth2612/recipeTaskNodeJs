@@ -1,6 +1,29 @@
 {
   "dependencies": {
+    "dotenv": "^17.2.3",
     "express": "^5.2.1",
-    "mongodb": "^7.0.0"
-  }
+    "mongodb": "^7.0.0",
+    "mongoose": "^9.1.2"
+  },
+  "name": "recipetasknodejs",
+  "version": "1.0.0",
+  "description": "curl --location 'http://localhost:8000/recipes' \\\r --header 'Content-Type: application/json' \\\r --data '{\r   \"title\": \"Chicken Biryani\",\r   \"ingredients\": [\"Rice\", \"Chicken\", \"Spices\"],\r   \"instructions\": \"Cook rice, marinate chicken, mix and cook.\",\r   \"prepTime\": 45,\r   \"servings\": 4\r }'",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aravinth2612/recipeTaskNodeJs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Aravinth2612/recipeTaskNodeJs/issues"
+  },
+  "homepage": "https://github.com/Aravinth2612/recipeTaskNodeJs#readme"
 }
